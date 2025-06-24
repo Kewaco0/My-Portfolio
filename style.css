@@ -409,3 +409,104 @@ section {
   border-radius: 25px;
   box-shadow: 0 0 50px #0cffff33;
   color: #fff;
+/* MEDIA RESPONSIVENESS - Mobile */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 1rem 5%;
+    flex-direction: row;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -240px;
+    width: 240px;
+    height: 100vh;
+    background: #121212;
+    padding-top: 5rem;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 25px #0cffff88;
+  }
+
+  nav ul.active {
+    display: flex;
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 2.6rem;
+  }
+
+  .header-text p {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+  }
+
+  section {
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .sub-title {
+    font-size: 2.2rem;
+  }
+
+  #about .row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex: 1 1 100%;
+  }
+
+  .services-list,
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+
+  .table-titles {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+
+  .contact-left {
+    margin-bottom: 2rem;
+  }
+
+  .layer h3 {
+    font-size: 1.2rem;
+  }
+
+  .layer p {
+    font-size: 0.95rem;
+  }
+}
